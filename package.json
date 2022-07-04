@@ -1,11 +1,12 @@
 {
-  "name": "typescript",
+  "name": "typescriptcourse",
   "version": "1.0.0",
   "description": "course TypeScript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server"
+    "start": "lite-server",
+    "lint": "eslint . --ext .ts"
   },
   "keywords": [
     "ts",
@@ -14,7 +15,11 @@
   "author": "Smirnov Aleksandr <ryan00@mail.ru>",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "eslint": "^8.19.0",
+    "lite-server": "^2.6.1",
+    "typescript": "^4.7.4"
   },
   "files": [
     "app.ts"
